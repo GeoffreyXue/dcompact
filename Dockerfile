@@ -6,6 +6,7 @@ RUN apt-get update && apt-get upgrade -y
 
 # Install dependencies
 RUN apt-get install -y \
+    build-essential \
     git \
     libgflags-dev \
     libsnappy-dev \
