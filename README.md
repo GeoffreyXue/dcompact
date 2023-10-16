@@ -18,5 +18,8 @@ Installation fill follow the Ubuntu installation, following https://github.com/f
 
 
 ### 2. Building and running unit tests on Rocks DB itself
+
+Based on the installation instructions above, `make all` will compile the static library and al of the relevant tools.
+
 ### 3. Building out a mini application that uses Rocks DB
 ### 4. Introducing S3 Fuse with Rocks DB, figure out that integration
