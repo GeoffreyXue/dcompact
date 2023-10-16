@@ -1,6 +1,19 @@
 ### Decompact
 A repo for exploring the disaggregation of compaction for RocksDB.
 
+### Setup
+
+This project uses git submodules, since this repo is just intended to explore an unmodified version of rocksdb.
+
+You can set up the submodule via `git submodule init` and `git submodule update`.
+
+> Also, you may have to set `git config core.filemode false` to prevent git from changing the executable permissions.
+
+You should be ready to go!
+
+
+### Step by Step
+
 1. Getting started with dev-container with all necessary dependencies
 2. Building and running unit tests on Rocks DB itself
 3. Building out a mini application that uses Rocks DB
