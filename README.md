@@ -35,4 +35,9 @@ Installation fill follow the Ubuntu installation, following https://github.com/f
 Based on the installation instructions above, `make all` will compile the static library and al of the relevant tools.
 
 ### 3. Building out a mini application that uses Rocks DB
+
+From reading http://rocksdb.blogspot.com/2013/11/the-history-of-rocksdb.html, it mentions that many different things are pluggable, in the sense that it can be built on top of RocksDB. It may be interesting to implement this for compaction/sstable format in the future.
+
+
+
 ### 4. Introducing S3 Fuse with Rocks DB, figure out that integration
