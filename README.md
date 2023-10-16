@@ -9,7 +9,7 @@ You can set up the submodule via `git submodule init` and `git submodule update`
 
 > Also, you may have to set `git config core.filemode false` to prevent git from changing the executable permissions.
 
-You should be ready to go!
+Then, open this up and start up a docker container with VS Code. You should be ready to go!
 
 
 ### Step by Step
