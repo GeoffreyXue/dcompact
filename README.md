@@ -15,7 +15,7 @@ Then, open this up and start up a docker container with VS Code. You should be r
 ### Step by Step
 
 1. Getting started with dev-container with all necessary dependencies
-2. Building and running unit tests on Rocks DB itself
+2. Building and running RocksDB itself using a example application wtihin the examples folder
 3. Building out a mini application that uses Rocks DB
 4. Introducing S3 Fuse with Rocks DB, figure out that integration
 
