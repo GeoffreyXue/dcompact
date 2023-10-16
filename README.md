@@ -14,6 +14,7 @@ Post steps not mentioned:
 
 ### 1. Getting started with dev-container with all necessary dependencies
 
+Installation fill follow the Ubuntu installation, following https://github.com/facebook/rocksdb/blob/main/INSTALL.md to create a dev container that satisfies all dependencies.
 
 
 ### 2. Building and running unit tests on Rocks DB itself
