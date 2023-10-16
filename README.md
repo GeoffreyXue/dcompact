@@ -16,8 +16,7 @@ Then, open this up and start up a docker container with VS Code. You should be r
 
 1. Getting started with dev-container with all necessary dependencies
 2. Building and running RocksDB itself using a example application wtihin the examples folder
-3. Building out a mini application that uses Rocks DB
-4. Introducing S3 Fuse with Rocks DB, figure out that integration
+3. Introducing S3 Fuse with Rocks DB, figure out that integration
 
 Post steps not mentioned:
 - Learn more C++
@@ -30,14 +29,12 @@ Post steps not mentioned:
 Installation fill follow the Ubuntu installation, following https://github.com/facebook/rocksdb/blob/main/INSTALL.md to create a dev container that satisfies all dependencies.
 
 
-### 2. Building and running unit tests on Rocks DB itself
+### 2. Building and running RocksDB itself using a example application wtihin the examples folder
 
 Based on the installation instructions above, `make all` will compile the static library and al of the relevant tools.
 
-### 3. Building out a mini application that uses Rocks DB
-
 From reading http://rocksdb.blogspot.com/2013/11/the-history-of-rocksdb.html, it mentions that many different things are pluggable, in the sense that it can be built on top of RocksDB. It may be interesting to implement this for compaction/sstable format in the future.
 
+### 3. Introducing S3 Fuse with Rocks DB, figure out that integration
 
-
-### 4. Introducing S3 Fuse with Rocks DB, figure out that integration
+Blindly following https://linuxbeast.com/tutorials/aws/install-s3fs-and-mount-s3-bucket-on-ubuntu-18-04/ for now
