@@ -37,4 +37,8 @@ From reading http://rocksdb.blogspot.com/2013/11/the-history-of-rocksdb.html, it
 
 ### 3. Introducing S3 Fuse with Rocks DB, figure out that integration
 
-Blindly following https://linuxbeast.com/tutorials/aws/install-s3fs-and-mount-s3-bucket-on-ubuntu-18-04/ for now
+Blindly following https://linuxbeast.com/tutorials/aws/install-s3fs-and-mount-s3-bucket-on-ubuntu-18-04/ and https://linuxbeast.com/aws-operations/how-to-install-s3fs-and-mount-an-s3-bucket-on-ubuntu-20-04/ for now
+
+```
+sudo apt-get install automake autotools-dev fuse g++ git libcurl4-gnutls-dev libfuse-dev libssl-dev libxml2-dev make pkg-config
+```

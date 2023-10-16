@@ -1,3 +1,6 @@
 [submodule "rocksdb"]
 	path = rocksdb
 	url = https://github.com/facebook/rocksdb
+[submodule "s3fs-fuse"]
+	path = s3fs-fuse
+	url = https://github.com/s3fs-fuse/s3fs-fuse.git

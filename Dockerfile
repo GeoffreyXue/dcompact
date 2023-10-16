@@ -38,6 +38,9 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk-amd64
 # install mingw
 RUN apt-get install -y mingw-w64
 
+# install fuse, libcurl, and libfuse for s3fuse
+RUN apt-get install -y fuse libcurl4-gnutls-dev libfuse-dev
+
 # install gtest-parallel package
 RUN git clone --single-branch --branch master --depth 1 https://github.com/google/gtest-parallel.git ~/gtest-parallel
 ENV PATH $PATH:/root/gtest-parallel
