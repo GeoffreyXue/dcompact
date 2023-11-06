@@ -122,6 +122,7 @@ class FullCompactor : public Compactor {
         reinterpret_cast<CompactionTask*>(arg));
     assert(task);
     assert(task->db);
+    printf("CHANGE: About to compact!\n");
     Status s = task->db->CompactFiles(
         task->compact_options, task->input_file_names, task->output_level);
     printf("CompactFiles() finished with status %s\n", s.ToString().c_str());
