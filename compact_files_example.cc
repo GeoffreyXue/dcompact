@@ -144,13 +144,27 @@ class FullCompactor : public Compactor {
 int main() {
   Options options;
   options.create_if_missing = true;
-  // Disable RocksDB background compaction.
+
+  // https://betterprogramming.pub/navigating-the-minefield-of-rocksdb-configuration-options-246af1e1d3f9
+
+  // Compaction Settings
+  // Disable RocksDB background compaction, use custom FullCompactor
   options.compaction_style = ROCKSDB_NAMESPACE::kCompactionStyleNone;
-  // Small slowdown and stop trigger for experimental purpose.
-  options.level0_slowdown_writes_trigger = 3;
-  options.level0_stop_writes_trigger = 5;
-  options.IncreaseParallelism(5);
   options.listeners.emplace_back(new FullCompactor(options));
+
+  // Don't slow down writes, but have much smaller stop trigger
+  // options.level0_slowdown_writes_trigger = 3;
+  options.level0_stop_writes_trigger = 3;
+
+  // Restrict to just one thread for compaction
+  options.IncreaseParallelism(1);
+  
+
+  // Memtable Settings
+  // Try to minimize memory caching as much as possible for this test
+  // So we get to compaction faster
+  // Setting to 1KB
+  options.write_buffer_size = 1024;
 
   DB* db = nullptr;
   ROCKSDB_NAMESPACE::DestroyDB(kDBPath, options);
